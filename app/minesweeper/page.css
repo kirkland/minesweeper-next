@@ -1,0 +1,34 @@
+#root {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  user-select: none;
+  width: 95%;
+}
+
+#game-status {
+  display: flex;
+}
+
+#bombs-remaining-container {
+  width: 20%;
+}
+
+#bombs-remaining {
+  font-size: 24px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#new-game-container {
+  width: 60%;
+}
+
+button#new-game {
+  background-color: aquamarine;
+  display: block;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 150px;
+}

@@ -1,0 +1,53 @@
+.cell {
+  aspect-ratio: 1/1;
+  background-color: gray;
+  border: 1px rgb(48, 137, 121) solid;
+  flex-grow: 1;
+  font-size: 26px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cellFlagging {
+  background-color: aquamarine;
+}
+
+.cellFlagged {
+  background-color: aquamarine;
+}
+
+.cellRevealed .contentHolder {
+  animation-duration: 0.1s;
+  animation-name: slidein;
+  background-color: lightgray;
+}
+
+.cellRevealedBomb .contentHolder {
+  background-color: aquamarine;
+}
+
+.contentHolder {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  left: 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.contentHolder img {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slidein {
+  from {
+    top: -40px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
